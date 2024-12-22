@@ -1,0 +1,35 @@
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c: In function 'app_main':
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:31:29: error: 'CONFIG_GPIO_OUTPUT_0' undeclared (first use in this function)
+   31 | #define GPIO_OUTPUT_IO_0    CONFIG_GPIO_OUTPUT_0
+      |                             ^~~~~~~~~~~~~~~~~~~~
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:33:38: note: in expansion of macro 'GPIO_OUTPUT_IO_0'
+   33 | #define GPIO_OUTPUT_PIN_SEL  ((1ULL<<GPIO_OUTPUT_IO_0) | (1ULL<<GPIO_OUTPUT_IO_1))
+      |                                      ^~~~~~~~~~~~~~~~
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:62:28: note: in expansion of macro 'GPIO_OUTPUT_PIN_SEL'
+   62 |     io_conf.pin_bit_mask = GPIO_OUTPUT_PIN_SEL;
+      |                            ^~~~~~~~~~~~~~~~~~~
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:31:29: note: each undeclared identifier is reported only once for each function it appears in
+   31 | #define GPIO_OUTPUT_IO_0    CONFIG_GPIO_OUTPUT_0
+      |                             ^~~~~~~~~~~~~~~~~~~~
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:33:38: note: in expansion of macro 'GPIO_OUTPUT_IO_0'
+   33 | #define GPIO_OUTPUT_PIN_SEL  ((1ULL<<GPIO_OUTPUT_IO_0) | (1ULL<<GPIO_OUTPUT_IO_1))
+      |                                      ^~~~~~~~~~~~~~~~
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:62:28: note: in expansion of macro 'GPIO_OUTPUT_PIN_SEL'
+   62 |     io_conf.pin_bit_mask = GPIO_OUTPUT_PIN_SEL;
+      |                            ^~~~~~~~~~~~~~~~~~~
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:32:29: error: 'CONFIG_GPIO_OUTPUT_1' undeclared (first use in this function)
+   32 | #define GPIO_OUTPUT_IO_1    CONFIG_GPIO_OUTPUT_1
+      |                             ^~~~~~~~~~~~~~~~~~~~
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:33:65: note: in expansion of macro 'GPIO_OUTPUT_IO_1'
+   33 | #define GPIO_OUTPUT_PIN_SEL  ((1ULL<<GPIO_OUTPUT_IO_0) | (1ULL<<GPIO_OUTPUT_IO_1))
+      |                                                                 ^~~~~~~~~~~~~~~~
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:62:28: note: in expansion of macro 'GPIO_OUTPUT_PIN_SEL'
+   62 |     io_conf.pin_bit_mask = GPIO_OUTPUT_PIN_SEL;
+      |                            ^~~~~~~~~~~~~~~~~~~
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c: At top level:
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:146:6: warning: 'app_main' defined but not used [-Wunused-function]
+  146 | void app_main(void)
+      |      ^~~~~~~~
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/blink-led.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5628: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

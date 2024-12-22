@@ -1,0 +1,15 @@
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c: In function 'app_main':
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:38:20: error: 'GPIO_INTR_DISABLet' undeclared (first use in this function); did you mean 'GPIO_INTR_DISABLE'?
+   38 |       .intr_type = GPIO_INTR_DISABLet with bit mask, each bit maps to a GPIE,
+      |                    ^~~~~~~~~~~~~~~~~~
+      |                    GPIO_INTR_DISABLE
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:38:20: note: each undeclared identifier is reported only once for each function it appears in
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:38:39: error: expected '}' before 'with'
+   38 |       .intr_type = GPIO_INTR_DISABLet with bit mask, each bit maps to a GPIE,
+      |                                       ^~~~
+/home/milan-rayee/esp-idf/projects/blink-led/main/blink-led.c:37:29: note: to match this '{'
+   37 |     gpio_config_t io_conf = {
+      |                             ^
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/blink-led.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:5628: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

@@ -1,0 +1,148 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.4-dev-2004-g8e4454b285 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  9 2024 23:36:23[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.0[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09ca8h ( 40104) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=00019cd0 vaddr=3ffb0000 size=02364h (  9060) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001c03c vaddr=40080000 size=03fdch ( 16348) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14a8ch ( 84620) map[0m
+[0;32mI (163) esp_image: segment 4: paddr=00034ab4 vaddr=40083fdc size=08a74h ( 35444) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     blink-led[0m
+[0;32mI (212) app_init: App version:      v5.4-dev-2004-g8e4454b285[0m
+[0;32mI (218) app_init: Compile time:     Aug  9 2024 23:37:25[0m
+[0;32mI (224) app_init: ELF file SHA256:  72180cc30...[0m
+[0;32mI (230) app_init: ESP-IDF:          v5.4-dev-2004-g8e4454b285[0m
+[0;32mI (236) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (241) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (246) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C30 len 0002D3D0 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CA50 len 000135B0 (77 KiB): IRAM[0m
+[0;32mI (291) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (321) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+cnt: 0
+cnt: 1
+cnt: 2
+cnt: 3
+cnt: 4
+cnt: 5
+cnt: 6
+cnt: 7
+cnt: 8
+cnt: 9
+cnt: 10
+cnt: 11
+cnt: 12
+cnt: 13
+cnt: 14
+cnt: 15
+cnt: 16
+cnt: 17
+cnt: 18
+cnt: 19
+cnt: 20
+cnt: 21
+cnt: 22
+cnt: 23
+cnt: 24
+cnt: 25
+cnt: 26
+cnt: 27
+cnt: 28
+cnt: 29
+cnt: 30
+cnt: 31
+cnt: 32
+cnt: 33
+cnt: 34
+cnt: 35
+cnt: 36
+cnt: 37
+cnt: 38
+cnt: 39
+cnt: 40
+cnt: 41
+cnt: 42
+cnt: 43
+cnt: 44
+cnt: 45
+cnt: 46
+cnt: 47
+cnt: 48
+cnt: 49
+cnt: 50
+cnt: 51
+cnt: 52
+cnt: 53
+cnt: 54
+cnt: 55
+cnt: 56
+cnt: 57
+cnt: 58
+cnt: 59
+cnt: 60
+cnt: 61
+cnt: 62
+cnt: 63
+cnt: 64
+cnt: 65
+cnt: 66
+cnt: 67
+cnt: 68
+cnt: 69
+cnt: 70
+cnt: 71
+cnt: 72
+cnt: 73
+cnt: 74
+cnt: 75
+cnt: 76
+cnt: 77
+cnt: 78
+cnt: 79
+cnt: 80
+cnt: 81
+cnt: 82
+cnt: 83
+cnt: 84
+cnt: 85
+cnt: 86
+cnt: 87
+cnt: 88
+cnt: 89
+cnt: 90
